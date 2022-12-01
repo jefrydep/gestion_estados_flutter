@@ -9,7 +9,7 @@ class Screen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final newUsser = Usuario(
-        nombre: 'godofredo',
+        nombre: 'godofredo', 
         edad: 23,
         profesiones: ['ing software', 'movil developer']);
     final usuarioService = Provider.of<UsuarioService>(context);

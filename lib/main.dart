@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:forms_app/screens/home_scren.dart';
 import 'package:forms_app/screens/screen1.dart';
 import 'package:forms_app/screens/screen2.dart';
+import 'package:forms_app/screens/test_screen.dart';
 import 'package:forms_app/services/usuario_service.dart';
 import 'package:provider/provider.dart';
 
@@ -30,8 +31,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: 'home',
+        initialRoute: 'test',
         routes: {
+          'test': (context) => const TestScreen(),
           'home': (context) => const HomeScreen(),
           'screen1': (context) => const Screen1(),
           'screen2': (context) => const Screen2()

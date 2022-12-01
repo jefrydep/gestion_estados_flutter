@@ -18,7 +18,7 @@ class Screen1 extends StatelessWidget {
           ? _UserInformation(
               usuario: usuarioService.usuario!,
             )
-          : Center(
+          : const Center(
               child: Text('no hay usuario seleccionado'),
             ),
       floatingActionButton: FloatingActionButton(
